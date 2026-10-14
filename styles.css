@@ -340,14 +340,26 @@ body {
     text-align: left;
 }
 
-.feature-icon {
+.feature-icon-wrapper {
     width: 44px;
     height: 44px;
-    padding: 9px;
+    min-width: 44px;
+    min-height: 44px;
     border: 1px solid var(--accent-purple);
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--accent-purple);
     flex-shrink: 0;
+}
+
+.feature-icon {
+    width: 22px !important;
+    height: 22px !important;
+    max-width: 22px;
+    max-height: 22px;
+    display: block;
 }
 
 .footer-feature-item span {
@@ -373,8 +385,9 @@ body {
 }
 
 .quote-heart-icon {
-    width: 28px;
-    height: 28px;
+    width: 26px !important;
+    height: 26px !important;
+    min-width: 26px;
     color: var(--accent-purple);
     flex-shrink: 0;
 }
@@ -385,12 +398,6 @@ body {
     font-size: 1.15rem;
     color: var(--accent-purple);
     white-space: nowrap;
-}
-
-.footer-leaf-img {
-    height: 30px;
-    width: auto;
-    opacity: 0.8;
 }
 
 .footer-copy {
@@ -432,6 +439,12 @@ body {
         gap: 8px;
         width: 100%;
         max-width: 380px;
+    }
+
+    .footer-features {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
     }
 
     .footer-divider {
