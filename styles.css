@@ -336,6 +336,10 @@ body {
     }
     
     .about-section-logo {
+        position: static;
+        display: block;
+        margin-right: 0;
+        margin-bottom: 15px;
         height: 75px;
     }
 
