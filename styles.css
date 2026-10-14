@@ -1,8 +1,7 @@
-/* --- PROMĚNNÉ & BAREVNÁ PALETA --- */
 :root {
-    --bg-header: #FAF8F3;       /* Krémová pouze pro záhlaví a patku */
-    --bg-main: #FFFFFF;         /* Bílé pozadí */
-    --bg-purple-light: #FDFBFF;  /* Hodně světle fialová pro střídání */
+    --bg-header: #FAF8F3;       
+    --bg-main: #FFFFFF;     
+    --bg-purple-light: #FDFBFF; 
     
     --primary-green: #7E9C7A;
     --dark-green: #5F7A63;
@@ -16,7 +15,6 @@
     --font-body: 'Lato', sans-serif;
 }
 
-/* --- ZÁKLADNÍ NASTAVENÍ --- */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -40,9 +38,8 @@ body {
     padding: 0 20px;
 }
 
-/* --- NAVIGACE & HLAVIČKA --- */
 .navbar {
-    background-color: var(--bg-header); /* #FAF8F3 */
+    background-color: var(--bg-header); 
     position: sticky;
     top: 0;
     z-index: 100;
@@ -87,7 +84,6 @@ body {
     color: var(--dark-green);
 }
 
-/* --- HERO SEKCE --- */
 .hero {
     width: 100%;
     max-height: 480px;
@@ -101,17 +97,15 @@ body {
     display: block;
 }
 
-/* --- SEKCÍM & TYPOGRAFIE --- */
 .content-section {
     padding: 60px 0;
     width: 100%;
-    background-color: var(--bg-main); /* Bílé pozadí (#FFFFFF) */
-    scroll-margin-top: 95px; /* Rezerva pro sticky navi při skoku na kotvu */
+    background-color: var(--bg-main); 
+    scroll-margin-top: 95px; 
 }
 
-/* Třída pro světle fialové pozadí sekcí přes celou šířku */
 .section-alt {
-    background-color: var(--bg-purple-light); /* #FDFBFF */
+    background-color: var(--bg-purple-light);
 }
 
 .brand-title {
@@ -162,7 +156,6 @@ body {
     margin-bottom: 0;
 }
 
-/* --- CENÍK --- */
 .pricing-container {
     display: flex;
     flex-direction: column;
@@ -244,7 +237,6 @@ body {
     color: #222222;
 }
 
-/* --- KONTAKT A MAPA --- */
 .contact-section {
     padding-bottom: 80px;
 }
@@ -289,9 +281,8 @@ body {
     font-size: 1.15rem;
 }
 
-/* --- FOOTER --- */
 .footer {
-    background-color: var(--bg-header); /* #FAF8F3 */
+    background-color: var(--bg-header);
     text-align: center;
     padding: 25px 0;
     font-size: 0.85rem;
@@ -299,13 +290,8 @@ body {
     border-top: 1px solid #EAEAEA;
 }
 
-/* ==========================================================================
-   RESPONZIVITA (MOBILY A TABLETY)
-   ========================================================================== */
-
 @media (max-width: 768px) {
     
-    /* Vylepšení hlavičky a navigace */
     .navbar {
         padding: 12px 0;
     }
@@ -316,12 +302,12 @@ body {
     }
 
     .logo-img {
-        height: 50px; /* Mírně zmenšené logo pro mobily */
+        height: 50px; 
     }
 
     .nav-menu {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Tlačítka hezky do 2 sloupců */
+        grid-template-columns: 1fr 1fr; 
         gap: 8px;
         width: 100%;
         max-width: 380px;
@@ -333,10 +319,9 @@ body {
         width: 100%;
     }
 
-    /* Odsazení a velikosti písma pro mobilní obrazovku */
     .content-section {
         padding: 40px 0;
-        scroll-margin-top: 135px; /* Vyšší rezerva kvůli dvouřádkové navigaci */
+        scroll-margin-top: 135px;
     }
 
     .brand-title {
@@ -354,15 +339,14 @@ body {
     }
 
     .text-block p, .pricing-card-text {
-        text-align: left; /* Zarovnání doleva je na mobilu lépe čitelné než do bloku */
+        text-align: left;
         font-size: 0.98rem;
     }
 
     .hero {
-        max-height: 280px; /* Nižší úvodní foto na mobilech */
+        max-height: 280px; 
     }
 
-    /* Ceník na mobilu */
     .pricing-card-header {
         flex-direction: column;
         align-items: flex-start;
@@ -379,7 +363,6 @@ body {
         font-size: 0.95rem;
     }
 
-    /* Kontakt na mobilu */
     .contact-grid {
         flex-direction: column;
         align-items: flex-start;
