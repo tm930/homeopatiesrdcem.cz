@@ -159,8 +159,9 @@ body {
 }
 
 .text-block .subtitle {
-    font-family: var(--font-heading);
-    font-size: 1.35rem;
+    font-family: var(--font-subheading);
+    font-size: 1.2rem;
+    font-weight: 600;
     color: var(--dark-green);
     margin-bottom: 10px;
 }
@@ -170,6 +171,7 @@ body {
 }
 
 .text-block p {
+    font-family: var(--font-body);
     font-size: 1.05rem;
     color: #444444;
     margin-bottom: 20px;
@@ -206,12 +208,14 @@ body {
 }
 
 .pricing-card-title {
-    font-family: var(--font-heading);
-    font-size: 1.25rem;
+    font-family: var(--font-subheading);
+    font-size: 1.2rem;
+    font-weight: 600;
     color: #222222;
 }
 
 .pricing-duration {
+    font-family: var(--font-body);
     font-size: 0.85rem;
     color: var(--text-muted);
     display: block;
@@ -226,6 +230,7 @@ body {
 }
 
 .pricing-card-text {
+    font-family: var(--font-body);
     font-size: 0.98rem;
     color: #555555;
     line-height: 1.6;
@@ -253,11 +258,13 @@ body {
 }
 
 .pricing-row .service-name {
+    font-family: var(--font-body);
     color: #333333;
 }
 
 .pricing-row .price {
-    font-weight: 700;
+    font-family: var(--font-subheading);
+    font-weight: 600;
     color: #222222;
 }
 
@@ -287,6 +294,7 @@ body {
 
 .contact-info {
     flex: 1;
+    font-family: var(--font-body);
     font-size: 1.15rem;
     line-height: 1.8;
 }
@@ -309,6 +317,7 @@ body {
     background-color: var(--bg-header);
     text-align: center;
     padding: 25px 0;
+    font-family: var(--font-body);
     font-size: 0.85rem;
     color: var(--text-muted);
     border-top: 1px solid #EAEAEA;
