@@ -33,18 +33,18 @@ body {
 }
 
 .about-header-wrapper {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start; 
-    gap: 25px; 
+    position: relative;
     margin-bottom: 25px;
 }
 
 .about-section-logo {
-    height: 90px;   
+    position: absolute;
+    right: 100%;  
+    top: 0;
+    margin-right: 25px;
+    height: 90px;
     width: auto;
     object-fit: contain;
-    flex-shrink: 0;  
 }
 
 .about-title-group .brand-title {
