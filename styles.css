@@ -330,7 +330,7 @@ body {
     justify-content: space-between;
     padding-bottom: 25px;
     margin-bottom: 25px;
-    border-bottom: 1px solid #EAEAEA;
+    border-bottom: none;
     gap: 15px;
     width: 100%;
 }
