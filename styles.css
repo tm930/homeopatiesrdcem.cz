@@ -274,6 +274,7 @@ body {
 
 .contact-grid {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 40px;
 }
@@ -313,6 +314,7 @@ body {
     font-size: 1.15rem;
 }
 
+/* --- PATKA (DESKTOP FIRST) --- */
 .footer {
     background-color: var(--bg-header);
     text-align: center;
@@ -325,6 +327,7 @@ body {
 
 .footer-features {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 25px;
@@ -343,13 +346,12 @@ body {
     flex-shrink: 0;
 }
 
-/* Rozšíření 1. a 3. boxíku */
 .wide-item {
     min-width: 175px;
 }
 
 .extra-wide-item {
-    min-width: 215px;
+    min-width: 220px;
 }
 
 .feature-icon-wrapper {
@@ -394,6 +396,7 @@ body {
 
 .footer-quote-item {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 10px;
     flex-shrink: 0;
@@ -419,125 +422,8 @@ body {
     margin-top: 10px;
 }
 
-    .nav-container {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .logo-img {
-        height: 50px; 
-    }
-
-    .about-header-wrapper {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-    }
-    
-    .about-section-logo {
-        position: static;
-        display: block;
-        margin-right: 0;
-        margin-bottom: 15px;
-        height: 75px;
-    }
-
-    .nav-menu {
-        display: grid;
-        grid-template-columns: 1fr 1fr; 
-        gap: 8px;
-        width: 100%;
-        max-width: 380px;
-    }
-
-    .footer-features {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-    }
-
-    .footer-divider {
-        display: none;
-    }
-
-    .footer-quote-item {
-        flex-wrap: wrap;
-        margin-top: 10px;
-    }
-
-    .footer-quote-text {
-        white-space: normal;
-        text-align: left;
-    }
-
-    .nav-btn {
-        font-size: 0.82rem;
-        padding: 7px 10px;
-        width: 100%;
-    }
-
-    .content-section {
-        padding: 40px 0;
-        scroll-margin-top: 135px;
-    }
-
-    .brand-title {
-        font-size: 2.1rem;
-    }
-
-    .brand-subtitle {
-        font-size: 0.75rem;
-        letter-spacing: 1.5px;
-        margin-bottom: 20px;
-    }
-
-    .section-title {
-        font-size: 1.6rem;
-    }
-
-    .text-block p, .pricing-card-text {
-        text-align: left;
-        font-size: 0.98rem;
-    }
-
-    .hero {
-        max-height: 280px; 
-    }
-
-    .pricing-card-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 4px;
-    }
-
-    .pricing-card-price {
-        font-size: 1.1rem;
-    }
-
-    .pricing-row {
-        flex-direction: column;
-        gap: 4px;
-        font-size: 0.95rem;
-    }
-
-    .contact-grid {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 25px;
-    }
-
-    .map-box {
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .contact-info {
-        font-size: 1rem;
-    }
-}
-
+/* --- POUZE MOBILNÍ ZOBRAZENÍ --- */
 @media (max-width: 768px) {
-    
     .navbar {
         padding: 12px 0;
     }
