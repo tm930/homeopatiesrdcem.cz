@@ -419,11 +419,6 @@ body {
     margin-top: 10px;
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        padding: 12px 0;
-    }
-
     .nav-container {
         flex-direction: column;
         gap: 12px;
