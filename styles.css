@@ -325,7 +325,7 @@ body {
 
 .footer-features {
     display: flex;
-    flex-direction: row; /* Zabezpečí zobrazení vedle sebe na PC */
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 25px;
@@ -344,7 +344,6 @@ body {
     flex-shrink: 0;
 }
 
-/* Rozšíření 1. a 3. boxíku */
 .wide-item {
     min-width: 180px;
 }
@@ -416,10 +415,7 @@ body {
     white-space: nowrap;
 }
 
-.footer-copy {
-    margin-top: 10px;
-}
-
+/* STYLY PRO SPODNÍ ŘÁDEK PATKY */
 .footer-bottom {
     display: flex;
     justify-content: space-between;
@@ -427,6 +423,7 @@ body {
     margin-top: 20px;
     font-size: 0.8rem;
     color: var(--text-muted);
+    width: 100%;
 }
 
 .footer-copy {
