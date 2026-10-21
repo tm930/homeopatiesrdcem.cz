@@ -420,6 +420,32 @@ body {
     margin-top: 10px;
 }
 
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.footer-copy {
+    margin: 0;
+    text-align: left;
+}
+
+.footer-privacy-link {
+    color: var(--text-muted);
+    text-decoration: underline;
+    font-size: 0.8rem;
+    transition: color 0.2s ease;
+    white-space: nowrap;
+}
+
+.footer-privacy-link:hover {
+    color: var(--accent-purple);
+}
+
 @media (max-width: 768px) {
     .navbar {
         padding: 12px 0;
@@ -539,5 +565,11 @@ body {
 
     .contact-info {
         font-size: 1rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
     }
 }
